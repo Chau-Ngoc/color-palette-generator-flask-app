@@ -3,8 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <title>Color Palette Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}" />
   </head>
   <body>
-    <h1>Hello</h1>
+    <div class="container"></div>
+    <form id="form">
+      <input
+        type="search"
+        name="prompt"
+        id="prompt"
+        aria-label="Describe your colors"
+        placeholder="Moody cold midnight"
+        aria-placeholder="Moody cold midnight"
+      />
+      <button type="submit" class="btn">Generate</button>
+    </form>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
   </body>
 </html>
